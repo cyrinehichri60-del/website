@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <body style="background-color: rgb(212, 164, 240);"></body>
+    <i>
+        <h2 style="color: blueviolet;"><i class="bi bi-gem" style="font-size:3rem;"></i>Welcome to my portfolio</h2>
+    </i>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg" style="background-color:rgb(137, 96, 175);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-filter="*" href="index2.html"><strong>Home</strong>
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false"><strong>Brands</strong></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="Bracelets.html"><strong>Bracelets</strong></a>
+                            <a class="dropdown-item" href="Necklaces.html"><strong>Nacklaces</strong></a>
+                            <a class="dropdown-item" href="Rings.html"><strong>Rings</strong></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-filter="Posters" href="Posters.html"><strong>Posters</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-filter="Skills" href="Skills.html"><strong>Skills</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><strong>About</strong></a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit"><strong>Search</strong></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title light-background">
+            <div class="container text-center">
+                <h1>Posters ✨</h1>
+                <nav class="breadcrumbs">
+                    <a href="index2.html" class="text-dark text-decoration-none"><strong>Home</strong>/</a>
+                    <span class="current">Posters</span>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+    </main>
+
+
+    <div class="container mt-5">
+
+        
+
+        <!-- Gallery -->
+        <div class="row mt-4 gy-4">
+
+            <!-- Item 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="affiche des sacs cuir copie.jpg"
+                        class="img-fluid">
+                    <div class="card-body">
+                        <p class="category">A simple and elegant poster design.</p>
+                        <h6>Affiche 1</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="affiche examen homme copie.jpg" class="img-fluid">
+                    <div class="card-body">
+                        <p class="category"></p>
+                        <h6>Affiche 2</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="affiche holiday.jpg" class="img-fluid">
+                    <div class="card-body">
+                        <p class="category"></p>
+                        <h6>Affiche 3</h6>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Item 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="MACARON.jpg" class="img-fluid">
+                    <div class="card-body">
+                        <p class="category"></p>
+                        <h6>Affiche 4</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="affiche2 sac cuir copie.jpg" class="img-fluid">
+                    <div class="card-body">
+                        <p class="category"></p>
+                        <h6>Affiche 5</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="affiche3 sac cuir.jpg" class="img-fluid">
+                    <div class="card-body">
+                        <p class="category"></p>
+                        <h6>Affiche 6</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    
+
+
+
+    <script>
+        function filterSelection(category) {
+            let items = document.querySelectorAll('.filter');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
